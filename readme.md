@@ -12,7 +12,6 @@ Laravel Flat Architecture 是一種為 Laravel 設計的扁平化架構模式
 
 核心理念：
 - ✅ Flat → 讓 Laravel 應用更扁平，避免傳統 Service 層的肥大問題
-- ✅ Readable → 讓代碼易讀，Queries + Mutations 讓開發者直覺理解業務邏輯
 
 👉 點此閱讀 Laravel Flat Architecture 架構介紹 🚀
 
