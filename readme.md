@@ -4,7 +4,6 @@
 - ✅ **完整的 Queries + Mutations 架構示範**
 - ✅ **不同應用場景的實作範例**
 - ✅ **實際專案的應用案例**
-- ✅ **持續更新的進階教學**
 
 ## 📖 Laravel Flat Architecture 是什麼？
 
