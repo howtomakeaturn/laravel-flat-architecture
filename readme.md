@@ -6,8 +6,6 @@
 - ✅ **實際專案的應用案例**
 - ✅ **持續更新的進階教學**
 
----
-
 ## 📖 Laravel Flat Architecture 是什麼？
 
 Laravel Flat Architecture 是一種為 Laravel 設計的扁平化架構模式
@@ -17,8 +15,6 @@ Laravel Flat Architecture 是一種為 Laravel 設計的扁平化架構模式
 - ✅ Readable → 讓代碼易讀，Queries + Mutations 讓開發者直覺理解業務邏輯
 
 👉 點此閱讀 Laravel Flat Architecture 架構介紹 🚀
-
----
 
 ## 🔥 想學習更多 Laravel Flat Architecture？
 
