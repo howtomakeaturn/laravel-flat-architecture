@@ -27,7 +27,7 @@ Controller 只負責接收請求、調用相應的 Query 或 Mutation，然後�
 - 測試 Query 和 Mutation 時不需要 HTTP Request，可以單獨測試查詢與變更邏輯。
 
 ### ✅ 可以在不同地方重用
-- 例如在 API、後台管理、排程任務（Jobs）、CLI 指令（Commands） 都可以共用相同的 Query 和 Mutation。
+- 例如在 API、後台管理、排程任務（Jobs）、CLI 指令（Commands）都可以共用相同的 Query 和 Mutation。
 
 ## 如何讓 Controller 保持價值？
 如果你希望 Controller 不要變得完全沒有存在感，可以考慮讓它負責：
