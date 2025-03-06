@@ -1,0 +1,31 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/spaze/phpstan-disallowed-calls/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 0  # 可以調整 level，5 是適中的嚴格度
+    paths:
+        - app/Http/Controllers
+
+    disallowedMethodCalls:
+        - method: Illuminate\Database\Eloquent\Model::save
+          message: "❌ 禁止在 Controller 內直接使用 save()，請使用 Mutations！"
+        - method: Illuminate\Database\Eloquent\Model::update
+          message: "❌ 禁止在 Controller 內直接使用 update()，請使用 Mutations！"
+        - method: Illuminate\Database\Eloquent\Model::delete
+          message: "❌ 禁止在 Controller 內直接使用 delete()，請使用 Mutations！"
+
+        - method: Illuminate\Database\Eloquent\Builder::where
+          message: "❌ 禁止在 Controller 內直接使用 where()，請使用 Queries！"
+        - method: Illuminate\Database\Eloquent\Builder::find
+          message: "❌ 禁止在 Controller 內直接使用 find()，請使用 Queries！"
+        - method: Illuminate\Database\Eloquent\Builder::first
+          message: "❌ 禁止在 Controller 內直接使用 first()，請使用 Queries！"
+        - method: Illuminate\Database\Eloquent\Builder::get
+          message: "❌ 禁止在 Controller 內直接使用 get()，請使用 Queries！"
+
+        - method: App\Services\*::*
+          message: "❌ 禁止在 Controller 內使用 Service！請使用 Mutations！"
+        - method: App\Repositories\*::*
+          message: "❌ 禁止在 Controller 內使用 Repository！請使用 Queries！"
